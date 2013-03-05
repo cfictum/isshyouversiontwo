@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Omrails</title>
+     <%= stylesheet_link_tag    "application", :media => "all" %>
+     <%= javascript_include_tag "application" %>
+     <%= csrf_meta_tags %>
+
+	<!-- NAVBAR
+	    ================================================== -->
+	    <div class="navbar-wrapper">
+	      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+	      <div class="container">
+	        <div class="navbar navbar-inverse">
+	          <div class="navbar-inner">
+	            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+	            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	            </button>
+	            <a class="brand" href="#">Project name</a>
+	            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+	            <div class="nav-collapse collapse">
+	              <ul class="nav">
+	                <li class="active"><a href="#">Home</a></li>
+	             
+	                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+	                <li class="dropdown">
+	                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	                  <ul class="dropdown-menu">
+	                    <li><a href="#">Action</a></li>
+	                    <li><a href="#">Another action</a></li>
+	                    <li><a href="#">Something else here</a></li>
+	                    <li class="divider"></li>
+	                    <li class="nav-header">Nav header</li>
+	                    <li><a href="#">Separated link</a></li>
+	                    <li><a href="#">One more separated link</a></li>
+	                  </ul>
+	                </li>
+	              </ul>
+	            </div><!--/.nav-collapse -->
+	          </div><!-- /.navbar-inner -->
+	        </div><!-- /.navbar -->
+
+	      </div> <!-- /.container -->
+	    </div><!-- /.navbar-wrapper -->
+
+
+
+	    <!-- Carousel
+	    ================================================== -->
+	    <div id="myCarousel" class="carousel slide">
+	      <div class="carousel-inner">
+	        <div class="item active">
+	     <%= image_tag 'elephant.jpg' %>
+	          <div class="container">
+	            <div class="carousel-caption">
+	              <h1>Feel Change.</h1>
+	              <p class="lead">issh is a platform where people can find and book convenient cause-related experiences put on by local change advocates. These experiences represent a variety of world-changing issues and are a 2-way exchange featuring engaged learning and hands-on change work.</p>
+	              <a class="btn btn-large btn-primary" href="/users/sign_up">Sign up today</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item">
+	          <%= image_tag 'isshrubycaseystanding.jpg' %>
+	          <div class="container">
+	            <div class="carousel-caption">
+	              <h1>Another example headline.</h1>
+	              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item">
+	      <%= image_tag 'isshrubycaseystanding.jpg' %>
+	          <div class="container">
+	            <div class="carousel-caption">
+	              <h1>One more for good measure.</h1>
+	              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	    </div><!-- /.carousel -->
+
+
+
+	    <!-- Marketing messaging and featurettes
+	    ================================================== -->
+	    <!-- Wrap the rest of the page in another container to center all the content. -->
+	    <div class="container marketing">
+	      <!-- Three columns of text below the carousel -->
+	<div class="row">
+	        <div class="span4">
+	          <img class="img-circle" data-src="holder.js/140x140">
+	          <h2>Sweaty Shoes</h2>
+	          <p>I Know Jane is a Chicago-based shoe company with a mission to shed some light on the sweat shops running the fashion industry. Participants will experience the conditions of a sweat shop in a mock setup and learn how to design a shoe from start to finish </p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+	        </div><!-- /.span4 -->
+	        <div class="span4">
+	          <img class="img-circle" data-src="holder.js/140x140">
+	          <h2>My Own Rhythm</h2>
+	          <p>Music education funding continues to be cut across the country. The People's Music School in Chicago is giving children the opportunity to learn music for free. In this experience participants will learn how to find their own rhythm through drum 101 lessons and build a drum pad from recycled materials.'</p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+	        </div><!-- /.span4 -->
+	        <div class="span4">
+	          <img class="img-circle" data-src="holder.js/140x140">
+	          <h2>The Water Crisis</h2>
+	          <p>issh presents a special screening in Chicago of the Last Call at the Oasis - a documentary that tackles the local and global water issues we face now and WILL face in the near future. There will be a live Q+A with a leader from Surge (a clean water non-profit) where participants can learn more about our water</p>
+	          <p><a class="btn" href="#">View details &raquo;</a></p>
+	        </div><!-- /.span4 -->
+	      </div><!-- /.row -->
+
+
+	      <!-- START THE FEATURETTES -->
+
+	      <hr class="featurette-divider">
+
+	      <div class="featurette">
+	        <img class="featurette-image pull-right" 
+	<%= image_tag 'lovehand.jpg' %>
+	        <h2 class="featurette-heading">Conveniently help change the world and <span class="muted">Feel that you did.</span></h2>
+	        <p class="lead">Traditionally giving back involves donating money and volunteering. Monetary donation = convenient but no engagement. Volunteering = 1-way engagement with ample learning to share afterwards and not always convenient. issh experience = a convenient 2-way experience with hands-on change work and engaged learning - you can feel the change.</p>
+	      </div>
+
+	      <hr class="featurette-divider">
+
+	      <div class="featurette">
+	        <img class="featurette-image pull-left" 
+		<%= image_tag 'humanrights.jpg' %>
+	        <h2 class="featurette-heading">Build an issh experience yourself,  <span class="muted">   create change.</span></h2>
+	        <p class="lead">Whether you're already changing the local/global world, or you just want to do more about an issue, contact issh and submit an experience in your local community to be featured on the issh platform.</p>
+	      </div>
+
+	      <hr class="featurette-divider">
+
+	      <div class="featurette">
+	        <img class="featurette-image pull-right"
+	 <%= image_tag 'margaretmead.jpg' %>
+	        <h2 class="featurette-heading">“Never doubt that a small group of thoughtful, committed, citizens can change the world. <span class="muted">Indeed, it is the only thing that ever has.”</span></h2>
+	        <p class="lead">Margaret Mead - a change advocate</p>
+	      </div>
+
+	      <hr class="featurette-divider">
+
+	      <!-- /END THE FEATURETTES -->
+
+
+	      <!-- FOOTER -->
+	      <footer>
+	        <p class="pull-right"><a href="#">Back to top</a></p>
+	        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	      </footer>
+
+	    </div><!-- /.container -->
+	
+	
+		
+		<!-- here is where i kept the original setup - but above is the bootstrap layout i wanted -->
+		
+		
+
+    </head>
+    <body>
+        <header>
+        <header class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <%= link_to "One Month Rails", root_path, id: "logo" %>
+              <nav>
+                <ul class="nav pull-right">
+                  		<li><%= link_to "About", about_path 	%></li>
+<% if user_signed_in? %>
+<li><%= link_to "Sign Out", destroy_user_session_path, :method =>:delete %></li>
+<% else %>
+<li><%= link_to "Sign In", new_user_session_path %></li>
+<% end %>
+				
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+            <% flash.each do |key, value| %>
+            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+            <% end %>
+            <%= yield %>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<% if user_signed_in? %>
+<h1>Welcome Change Agent</h1>
+
+ <h2>
+   Check out local
+   <% link_to "Experiences", experiences_path %>
+   and start your change agent adventure.
+ </h2>
+<% else %>
+
+<div class="center hero-unit">
+    <h1>Welcome to One Month Rails</h1>
+
+    <h2>
+      You've found the home page for the
+      <a href="http://omrails.com/">One Month Rails</a>
+      first application.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>
